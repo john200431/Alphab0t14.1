@@ -1284,16 +1284,16 @@ if (autobio === false) return
       settingstatus = new Date() * 1;
     }}
 		mess = {
-			wait: '```[ ! ] Proses kak...```',
-			success: '```[ ✓ ]``` Success',
-			wrongFormat: 'Format salah, coba liat lagi di menu',
+			wait: '```[ ! ] En Proceso Aguarde...```',
+			success: '```[ ✓ ]``` Exito',
+			wrongFormat: 'formato incorrecto, inténtalo de nuevo en el menú',
 			error: {
-				stick: 'Itu bukan stiker',
-				Iv: 'Linknya error:v'
+				stick: 'No es um sticker',
+				Iv: 'Linknya error'
 			},
 			only: {
-				group: 'Only Group',
-				admin: 'Only Group Admin',
+				group: '*SOLO GRUP*',
+				admin: '*Solo administrador de grupo*',
 			}
 		}
 		const isUrl = (url) => {
@@ -2257,7 +2257,7 @@ break
 let cek = ms( await premium.getPremiumExpired(sender, premium) - Date.now())
 let userProcfile = `「 *USER INFO* 」
 
-📛 Nama : ${pushname}
+📛 Name : ${pushname}
 💋 Bio : ${bio_user}
 🔗 Tag : @${sender.split("@")[0]}
 💥 Api : wa.me/${sender.split("@")[0]}
@@ -2322,7 +2322,7 @@ let papako = [{
 											},
 										"type": "RESPONSE"
 										}]
-								sendButLocation(from, teks , `Thank for verification\n© ${ownername}`,pp_userz, papako, {contextInfo: { mentionedJid: [sender]}})
+								sendButLocation(from, teks , `Verficacion completa\n© ${ownername}`,pp_userz, papako, {contextInfo: { mentionedJid: [sender]}})
                 }
 break
 	case 'menu': case 'help':{
@@ -2369,7 +2369,7 @@ ini_anu =`${ucapannya2}
 ╰❒ Owner : ${isOwner ? 'True' : `False`}
 `
 if(typemenu == 'document'){
-sendButDoc(from, ini_anu, `Please Don't spam bot, pause 3 seconds per command!\n`, sender, koko, ini_mark)
+sendButDoc(from, ini_anu, `Por favor, no envíe spam al bot, haga una pausa de 3 segundos por comando!\n`, sender, koko, ini_mark)
 } 
 if(typemenu == 'troli'){
 sendTroli(allmenu(kyun, os, prefix, wita, wit, ucapannya2, timuu, status, wa_version, mcc, mnc, os_version, device_manufacturer, device_model, alfa , alfa1, thisDay, ini_tanggal, totalchat, hit_today, ini_gcchat, latensii))
@@ -2744,7 +2744,7 @@ case 'groplist':
 case 'grouplist':
 if (!mek.key.fromMe && !isOwner && !isCreator) return reply(lang.onlyOwner())
 const txs = alpha.chats.all().filter(v => v.jid.endsWith('g.us')).map(v =>`•> ${alpha.getName(v.jid)}${enter}${v.jid}\n[${v.read_only ? 'Left' : 'Joined'}]`).join`${enter}~~${enter}`
-alpha.sendMessage(m.chat, '```「 LIST GROUPS 」```\n\n' + txs, text)
+alpha.sendMessage(m.chat, '```「 Lista de Grupo 」```\n\n' + txs, text)
 break
 				   break 
 case 'bcsticker':
@@ -3078,36 +3078,7 @@ await limitAdd(sender, limit)
 		            fs.unlinkSync(ran)
 		            })
 		            await limitAdd(sender, limit)
-					break   
-		case 'tupai':
-		if (isLimit(sender, isPremium, isCreator, isOwner, limitawal, limit)) return sendButMessage(from, lang.limit(prefix), `© ${ownername}`, [{buttonId: 'limit', buttonText: {displayText: `Check Limit`, },type: 1,}]);
-var encmedia6 = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
-var media6 = await alpha.downloadAndSaveMediaMessage(encmedia6)
-ran = getRandom('.mp3')
-exec(`ffmpeg -i ${media6} -filter:a "atempo=0.5,asetrate=65100" ${ran}`, (err, stderr, stdout) => {
-fs.unlinkSync(media6)
-if (err) return reply('Error!')
-let hah = fs.readFileSync(ran)
-alpha.sendMessage(from, hah, audio, {mimetype: 'audio/mp4', ptt:true, quoted: mek})
-fs.unlinkSync(ran)
-})
-await limitAdd(sender, limit)
-					break   
-		    case 'reverse':
-		if (isLimit(sender, isPremium, isCreator, isOwner, limitawal, limit)) return sendButMessage(from, lang.limit(prefix), `© ${ownername}`, [{buttonId: 'limit', buttonText: {displayText: `Check Limit`, },type: 1,}]);
-		            if (!isQuotedVideo) return fakegroup('```Reply videonya!```')
-		           var encmedia5 = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
-		          var media5 = await alpha.downloadAndSaveMediaMessage(encmedia5)
-		            ran = getRandom('.mp4')
-		            exec(`ffmpeg -i ${media5} -vf reverse -af areverse ${ran}`, (err) => {
-		            fs.unlinkSync(media5)
-		            if (err) return fakegroup(`Err: ${err}`)
-		            buffer453 = fs.readFileSync(ran)
-		            alpha.sendMessage(from, buffer453, video, { mimetype: 'video/mp4', quoted: mek })
-		            fs.unlinkSync(ran)
-		            })
-		            await limitAdd(sender, limit)
-					break   
+					break								 
 		    case 'anime2':
 					if (isLimit(sender, isPremium, isCreator, isOwner, limitawal, limit)) return sendButMessage(from, lang.limit(prefix), `© ${ownername}`, [{buttonId: 'limit', buttonText: {displayText: `Check Limit`, },type: 1,}]);
 		            fetch('https://raw.githubusercontent.com/pajaar/grabbed-results/master/pajaar-2020-gambar-anime.txt')
