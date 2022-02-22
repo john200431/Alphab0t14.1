@@ -84,45 +84,23 @@ const download = (prefix) => {
 │
 ├❒ ${prefix}ytsearch [query]
 ├❒ ${prefix}ytshorts [url]
-├❒ ${prefix}igstalk [username]
-├❒ ${prefix}ghstalk [username]
-├❒ ${prefix}play [query]
-├❒ ${prefix}playmp4 [query]
-├❒ ${prefix}video [query]
 ├❒ ${prefix}ytmp3 [link]
 ├❒ ${prefix}ytmp4 [link]
 ├❒ ${prefix}ig [link]
 ├❒ ${prefix}igphoto [link]
 ├❒ ${prefix}igvideo [link]
-├❒ ${prefix}igtv [link]
-├❒ ${prefix}igreels [link]
-├❒ ${prefix}twitter [link]
 ├❒ ${prefix}tiktokwm [link]
-├❒ ${prefix}tiktoknowm [link]
-├❒ ${prefix}tiktokaudio [link]
-├❒ ${prefix}facebook [link]
-├❒ ${prefix}facebookhd [link]
-├❒ ${prefix}facebooksd [link]
-├❒ ${prefix}facebookaudio [link]
-├❒ ${prefix}brainly [query]
 ├❒ ${prefix}image [query]
 ├❒ ${prefix}pinterest [query]
-├❒ ${prefix}pinterest2 [query]
-├❒ ${prefix}playstore [query]
-├❒ ${prefix}gcwa [query]
-├❒ ${prefix}lirik [query]
-├❒ ${prefix}komiku [query]
-├❒ ${prefix}otaku [query]
-└❒ ${prefix}anime _random_
 `
 }
 const allmenu = (kyun, os, prefix, wita, wit, ucapannya2, timuu, status, wa_version, mcc, mnc, os_version, device_manufacturer, device_model, alfa , alfa1, thisDay, ini_tanggal, totalchat, hit_today, ini_gcchat, latensii)  => {
 	return`❏───「 *WHATSAPP BOT* 」───❏
                                
 ${ucapannya2}
-⏰ Jam : ${timuu} Server Time
-🎀 Hari : ${thisDay}
-🗓️ Tanggal : ${ini_tanggal}
+Hora : ${timuu} Server Time
+Dia : ${thisDay}
+Mes : ${ini_tanggal}
 
 *Convert Menu*
 ${numberik} ${prefix}tts  [query]
@@ -139,35 +117,15 @@ ${numberik} ${prefix}tourl [reply foto/vid]
 *Download Menu* 
 ${numberik} ${prefix}ytsearch [query]
 ${numberik} ${prefix}ytshorts [url]
-${numberik} ${prefix}igstalk [username]
-${numberik} ${prefix}ghstalk [username]
-${numberik} ${prefix}play [query]
-${numberik} ${prefix}playmp4 [query]
-${numberik} ${prefix}video [query]
 ${numberik} ${prefix}ytmp3 [link]
 ${numberik} ${prefix}ytmp4 [link]
 ${numberik} ${prefix}ig [link]
 ${numberik} ${prefix}igphoto [link]
 ${numberik} ${prefix}igvideo [link]
-${numberik} ${prefix}igtv [link]
-${numberik} ${prefix}igreels [link]
-${numberik} ${prefix}twitter [link]
 ${numberik} ${prefix}tiktokwm [link]
-${numberik} ${prefix}tiktoknowm [link]
-${numberik} ${prefix}tiktokaudio [link]
-${numberik} ${prefix}facebook [link]
-${numberik} ${prefix}facebookhd [link]
-${numberik} ${prefix}facebooksd [link]
-${numberik} ${prefix}facebookaudio [link]
-${numberik} ${prefix}brainly [query]
 ${numberik} ${prefix}image [query]
 ${numberik} ${prefix}pinterest [query]
 ${numberik} ${prefix}pinterest2 [query]
-${numberik} ${prefix}playstore [query]
-${numberik} ${prefix}gcwa [query]
-${numberik} ${prefix}lirik [query]
-${numberik} ${prefix}komiku [query]
-${numberik} ${prefix}anime _random_
 
  *Fun Menu*
 ${numberik} ${prefix}start
@@ -184,29 +142,6 @@ ${numberik} ${prefix}jualcoal
 ${numberik} ${prefix}jualstone
 ${numberik} ${prefix}jualingot
 ${numberik} ${prefix}jualkayu
-${numberik} ${prefix}slot
-${numberik} ${prefix}inventory
-${numberik} ${prefix}dompet
-${numberik} ${prefix}suit
-${numberik} ${prefix}judi
-${numberik} ${prefix}fitnah
-${numberik} ${prefix}absen
-${numberik} ${prefix}absensi
-${numberik} ${prefix}tebakgambar
-${numberik} ${prefix}caklontong
-${numberik} ${prefix}family100
-${numberik} ${prefix}tebakanime
-${numberik} ${prefix}tebakkalimat
-${numberik} ${prefix}susunkata
-${numberik} ${prefix}tekateki
-${numberik} ${prefix}siapaaku
-${numberik} ${prefix}tebaklirik
-${numberik} ${prefix}tebakkata
-${numberik} ${prefix}suit
-${numberik} ${prefix}fitnahpc text|balasan
-${numberik} ${prefix}kontak 62xxx|text
-${numberik} ${prefix}tictactoe @user
-${numberik} ${prefix}delttt
 ${numberik} ${prefix}voting @user|reason|time
 ${numberik} ${prefix}delvote
 ${numberik} ${prefix}jadibot
@@ -236,28 +171,6 @@ ${numberik} ${prefix}halloween2 text|text2
 ${numberik} ${prefix}lion text|text2
 ${numberik} ${prefix}wolf_bw text|text2
 ${numberik} ${prefix}wolf_g text|text2
-${numberik} ${prefix}ninja text|text2
-${numberik} ${prefix}3dsteel text|text2
-${numberik} ${prefix}horror2 text|text2
-${numberik} ${prefix}lava text|text2
-${numberik} ${prefix}bagel text|text2
-${numberik} ${prefix}blackpink text
-${numberik} ${prefix}rainbow2 text
-${numberik} ${prefix}water_pipe text
-${numberik} ${prefix}halloween text
-${numberik} ${prefix}sketch text
-${numberik} ${prefix}sircuit text
-${numberik} ${prefix}discovery text
-${numberik} ${prefix}metallic2 text
-${numberik} ${prefix}fiction text
-${numberik} ${prefix}demon text
-${numberik} ${prefix}transformer text
-${numberik} ${prefix}berry text
-${numberik} ${prefix}thunder text
-${numberik} ${prefix}magma text
-${numberik} ${prefix}3dstone text
-${numberik} ${prefix}neon text
-${numberik} ${prefix}glitch text
 ${numberik} ${prefix}harry_potter text
 ${numberik} ${prefix}embossed text
 ${numberik} ${prefix}broken text
